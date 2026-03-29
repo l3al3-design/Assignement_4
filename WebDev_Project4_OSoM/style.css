@@ -3,12 +3,19 @@
     box-sizing: border-box;
 } */
 
+/******* IMPORTANT!! *******/
+/* Make sure that all the margin and padding are the same, as to avoid inconsistencies */
+
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Gluten:wght@100..900&family=Patrick+Hand&display=swap");
+
 :root {
     --primary: #2A4759;
     --secondary: #56778C;
     --tertiary: #A4B8BF;
     --accentlight: #F2C36B;
     --accent: #BF5E3B;
+    --red: #C2391C;
 }
 
 body {
@@ -21,6 +28,138 @@ body {
     background-color: var(--accentlight);
 }
 
+/******* FONTS *******/
+.text_normal {
+    font-family: "Pangolin", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.TEST,
+.merch_info {
+    font-family: "Pangolin", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #BED4DC;
+    font-size: 32px;
+}
+
+.band_title {
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--red);
+    font-size: 60px;
+    text-align: center;
+}
+
+/******* BOXES *******/
+.header_box {
+    position: center;
+    margin: 1rem;
+    padding: 16px;
+}
+
+.info_box {
+    border-radius: 15px;
+    background-color: var(--secondary);
+    position: flex;
+    margin: 1rem;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.button_box {
+    border-radius: 25px;
+    border: 3px solid var(--accentlight);
+    background-color: #A25032;
+    color: #D5AB5E;
+    position: flex;
+    padding: 12px;
+    transition-duration: 0.4s;
+    margin: 1rem;
+    /*font*/
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.button_box:hover {
+    background-color: #DC6D44;
+    color: #F5D099;
+    box-shadow:0 8px 16px 0 var(--secondary)
+}
+
+.img_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
+    gap: 16px;
+    margin: 1rem;
+}
+
+.img_box,
+.merch_img {
+    width: 300px;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 8px;
+    position: flex;
+    transition-duration: 0.4s;
+}
+
+.merch_info {       /* To fix later (maybe): Maybe had it's own font section, instead of sharing it with "TEST" so it can be bigger or something */
+    background-color: var(--secondary);
+    padding: 12px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.merch_info:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    box-shadow:0 8px 16px 0 var(--tertiary)
+}
+
+.price-box{     /* To fix later: i want it that the price tag is always on the right side of the box*/
+    background-color: var(--accentlight);
+    padding: 12px;
+    margin: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    /*font*/
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--accent);
+    font-size: 24px;
+}
+
+.footer_box {
+    background-color: #445E6F;
+    position: center;
+    margin: 12px;
+    padding: 16px;
+    border-radius: 15px;
+    border: 5px solid var(--tertiary);
+}
+
+/******* MEDIA QUERIES *******/
 @media (min-width: 768px) { /* tablet view */
     body {
         background-color: var(--primary);
@@ -31,28 +170,4 @@ body {
     body {
         background-color: var(--accent);
     }
-}
-
-.info_box {
-    border-radius: 15px;
-    background-color: var(--primary);
-    position: flex;
-    margin: 1rem;
-    padding: 10px;
-}
-
-.button_box {
-    border-radius: 25px;
-    background-color: var(--accent);
-    color: var(--accentlight);
-    position: flex;
-    padding: 15px;
-    transition-duration: 0.4s;
-    margin: 10px;
-}
-
-.button_box:hover {
-    background-color: #DC6D44;
-    color: #F5D099;
-    box-shadow:0 8px 16px 0 var(--secondary)
 }
