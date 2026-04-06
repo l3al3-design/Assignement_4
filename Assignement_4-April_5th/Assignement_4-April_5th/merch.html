@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ottawa State of Mind</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Frijole&family=Gaegu&family=Gamja+Flower&family=Germania+One&family=Luckiest+Guy&family=Pangolin&family=Patrick+Hand&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="header_box">
+				<h1 class="band-title">Ottawa State of Mind</h1>
+                <div id="app">
+                    <navbar-component></navbar-component>
+                </div>
+			</div>
+		</header>
+		<main>
+			<h2>Merchandise</h2>
+
+			<div class="filters nav-bar">
+				<ul class="nav-links">
+				<li><button class="filter-btn" data-category="all">All</button></li>
+				<li><button class="filter-btn" data-category="clothing">Clothing</button></li>
+				<li><button class="filter-btn" data-category="music">Music</button></li>
+				<li><button class="filter-btn" data-category="accessories">Accessories</button></li>
+				<li><button class="filter-btn" data-category="other">Other</button></li>
+				</ul>
+			</div>
+
+			<div id="merch-container"></div> <!-- fix the spacing on the sides of the page, it looks like it continue horizontally instead of wrapping -->
+		</main>
+
+		<footer>
+			<div class="footer_box">
+				<p class="TEST" style="color: #BED4DC;">Copyright 2026</p>  <!-- Make an lighter colored font css variation -->
+			</div>
+		</footer>
+		<script src="https://unpkg.com/vue@3"></script>
+        <script src="navbar.js"></script>
+
+        <script>
+            const app = Vue.createApp({});
+            app.component('navbar-component', window.Navbar);
+            app.mount('#app');
+        </script>
+
+	<script src="merch.js"></script>
+	</body>
+</html>

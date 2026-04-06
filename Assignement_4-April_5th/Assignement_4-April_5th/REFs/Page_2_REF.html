@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booyum Bar Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="StyleFile.css">
+  <link rel="stylesheet" href="NavBar.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+ <!---------------------- BACKGROUND ----------------------->
+<body>
+  <div id="app-wrapper">
+    <div class="background-animations">
+      <div class="blob blob-pink"></div>
+      <div class="blob blob-cyan"></div>
+      <div class="blob blob-orange"></div>
+    </div>
+
+    <!---------------------- NAV BAR ----------------------->
+    <div class="site-spacing">
+      <header class="site-header">
+        <nav class="nav-bar">
+          <button class="hamburger">☰</button>
+          <ul class="nav-links">
+            <li><a href="Page_1.html">Schedule</a></li>
+            <li><a href="Page_2.html" aria-current="page">Menu</a></li>
+            <li><a href="Page_3.html">Contact</a></li>
+            <li><a href="Page_4.html">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <section class="bar-top">
+          <p><span class="special-badge">EST. BY JOHN ROCK</span></p>
+          <h1 class="bar-name">BOOYUM</h1>
+          <p class="bar-slogan">YOUR WEEK STARTS HERE</p>
+          <p class="bar-word"><span class="emoji-icon">🍻</span><span>Drink</span><span>•</span><span>Dance</span><span >•</span><span>Vibe</span><span class="emoji-icon">🎉</span></p>
+        </section>
+      </header>
+
+			 <!---------------------- MENU ----------------------->
+			<main>
+					<h2 class="section-title">Drink Menu</h2>
+
+					<div class="filters nav-bar">
+            <ul class="nav-links">
+              <li><button class="filter-btn" data-category="all">All</button></li>
+              <li><button class="filter-btn" data-category="drink">Drinks</button></li>
+              <li><button class="filter-btn" data-category="food">Food</button></li>
+            </ul>
+					</div>
+
+					<div id="menu-container"></div>
+			</main>
+
+			<!---------------------- FOOTER ----------------------->
+			<footer class="site-footer">
+				<div class="footer">
+					<p class="details-text">
+						<span>📍 123 Night Street, Downtown</span>
+						<span>📞 (555) 123-4567</span>
+						<span>🕐 Open daily 4 PM - 2 AM</span>
+					</p>
+					<p class="note-text">21+ only • Valid ID required • Drink responsibly</p>
+					<p class="owner-signature">- John Rock, Owner</p>
+				</div>
+				<p class="discrete-text">Follow @BooyumBar for updates &amp; surprises 🎉</p>
+			</footer>
+		</div>
+	</div>
+
+<button class="hamburger">☰</button>
+<ul class="nav-links">
+<button id="topBtn">↑</button>
+<script src="Script.js"></script>
+</body>
+</html>
