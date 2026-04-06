@@ -1,0 +1,368 @@
+/*use custom font: @import url('https://fonts.googleapis.com/css?family=Averia Libre'); */ 
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+/******* IMPORTANT!! *******/
+/* Make sure that all the margin and padding are the same, as to avoid inconsistencies */
+
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Gluten:wght@100..900&family=Patrick+Hand&display=swap");
+
+:root {
+    --primary: #2A4759;
+    --secondary: #56778C;
+    --tertiary: #A4B8BF;
+    --accentlight: #F2C36B;
+    --accent: #BF5E3B;
+    --title: #C2391C;
+}
+
+body {
+  background-image: url("images/Shrimp_Blue.png");
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+
+
+/******* FONTS *******/
+.text_normal {
+    font-family: "Pangolin", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.TEST {
+    font-family: "Pangolin", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #BED4DC;
+    font-size: 32px;
+}
+
+.band-title {
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--title);
+    font-size: 3rem /*60px*/;
+    text-align: center;
+}
+
+/******* BOXES *******/
+.header_box {
+    position: center;
+    margin: 1rem;
+    padding: 16px;
+}
+
+.info_box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--secondary);
+    margin: 1rem;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+/*  VERSION 1
+.merch_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
+    gap: 16px;
+    margin: 1rem;
+}
+*/
+
+.merch_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.about_group {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.merch_box,
+.merch_img {
+    width: 300px;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 8px;
+    position: flex;
+    transition-duration: 0.4s;
+}
+*/
+
+.merch_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+}
+
+.merch_img {
+    width: 300px;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.merch_info {       
+    background-color: var(--secondary);
+    padding: 16px;
+    margin: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0px;
+    margin-bottom: 0px;
+    /*font*/
+    font-family: "Pangolin", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.merch_info:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    box-shadow:0 8px 16px 0 var(--secondary);
+}
+
+.price-box{
+    background-color: var(--accentlight);
+    width: 36px;
+    padding: 12px;
+    margin-right: 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+    /*font*/
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--accent);
+    font-size: 24px;
+    text-align: center;
+}
+
+/* ****** BUTTONS ******* */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-links a,
+.nav-links button {
+	display: block;
+	padding: 1rem 1.5rem;
+	width: 120px;
+	text-align: center;
+	border-radius: 25px;
+	border: 3px solid var(--accentlight);
+	background-color: #A25032;
+	color: #D5AB5E;
+	padding: 12px;
+	transition-duration: 0.4s;
+	margin: 1rem;
+	/*font*/
+	font-family: "Patrick Hand", cursive;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 20px;
+}
+
+.nav-links a:hover, 
+.nav-links button:hover {
+  background-color: #DC6D44;
+	color: #F5D099;
+	box-shadow:0 8px 16px 0 var(--secondary)
+}
+
+.button_box {
+	border-radius: 25px;
+	border: 3px solid var(--accentlight);
+	background-color: #A25032;
+	color: #D5AB5E;
+	position: flex;
+	padding: 12px;
+	transition-duration: 0.4s;
+	margin: 1rem;
+	/*font*/
+	font-family: "Patrick Hand", cursive;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 20px;
+}
+
+.button_box:hover {
+	background-color: #DC6D44;
+	color: #F5D099;
+	box-shadow:0 8px 16px 0 var(--secondary)
+}
+
+.hamburger{
+  display:none;
+  float: right;
+  font-size:28px;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+
+
+.footer_box {
+    background-color: var(--primary); 
+    position: center;
+    margin: 12px;
+    padding: 16px;
+    border-radius: 15px;
+    border: 5px solid var(--tertiary);
+}
+
+.banner-image{
+    height: 15rem;
+    color: var(--title);
+    background-color: blue;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 1vw;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+/* buttons to open and close panel */
+.accordion {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.accordion:after {
+    content: '\003E'; /* greater than symbol when inactive */
+    margin-left: 5px;
+}
+
+.active, .accordion:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: scale(1);
+}
+
+/* minus symbol when active */
+.active:after {
+    content: "\2212";
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion-panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: var(--accent);
+    background-color: var(--primary);
+}
+
+.song {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width:100%;
+    margin:0 auto;
+}
+
+/******* MEDIA QUERIES *******/
+@media (min-width: 768px) { /* tablet view */
+    body {
+        background-color: var(--primary);
+    }
+
+    .info-box{
+        display: none;
+        flex-direction: row;
+    }
+
+    .merch_img{
+        margin: 1rem;
+    }
+
+    .accordion-content {
+        display: grid;
+        grid-template-columns: 30% auto;
+        column-gap: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) { /* laptop/desktop view */
+    body {
+        background-color: var(--accent);
+    }
+
+    .info_box{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .band-title {
+        font-size: 4rem;
+    }
+
+    .accordion-content {
+        display: grid;
+        grid-template-columns: 30% auto;
+        column-gap: 30px;
+    }
+}
