@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ottawa State of Mind</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Frijole&family=Gaegu&family=Gamja+Flower&family=Germania+One&family=Luckiest+Guy&family=Pangolin&family=Patrick+Hand&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <header>
+			<div class="header_box">
+                <h1 class="band-title">Ottawa State of Mind</h1>
+                <div id="app">
+                    <navbar-component></navbar-component>
+                </div>
+            </div>
+        </header>
+            
+        <main>
+			<article class="divider_box">
+                <h2>Up coming events!!</h2>
+            </article>
+            
+            <div class="event_info">
+                    <img src="images/tank1.png" class="merch_img">
+                    <div>
+                        <h3>House of Targ</h3>
+                        <h3>April 8</h3>
+                        <button class="button_box">Buy Tickets</button>
+                    </div>  
+            </div>
+
+            <article class="divider_box">
+                <h2>Past Shows</h2>
+            </article>
+            <div class="event_info">
+                <h3>Mark Carney's House</h3>
+                <h3>March 5</h3>
+            </div>
+            <div class="event_info">
+                <h3>The Glebe</h3>
+                <h3>February 24</h3>
+            </div>
+            <div class="event_info">
+                <h3>United States Embassy</h3>
+                <h3>January 22</h3>
+            </div>
+            
+
+        </main>
+
+
+    	<footer>
+            <div class="footer_box">
+                <p class="TEST" style="color: #BED4DC;">Copyright 2026</p>  <!-- Make an lighter colored font css variation -->
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="navbar.js"></script>
+
+        <script>
+            const app = Vue.createApp({});
+            app.component('navbar-component', window.Navbar);
+            app.mount('#app');
+        </script>
+    </body> 
+</html>

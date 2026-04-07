@@ -1,0 +1,6 @@
+- fix info box (the header is touching the text)
+- fix the horizontal scroll on each pages
+- make sure all the images and spacing is consistant
+- make sure all the fonts are consistent
+- add "alt" to all the images
+- change all the fonts size to "rem" instead of "px"

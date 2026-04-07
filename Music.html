@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ottawa State of Mind</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Frijole&family=Gaegu&family=Gamja+Flower&family=Germania+One&family=Luckiest+Guy&family=Pangolin&family=Patrick+Hand&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <header>
+			<div class="header_box">
+                <h1 class="band-title">Ottawa State of Mind</h1>
+                <div id="app">
+                    <navbar-component></navbar-component>
+                </div>
+            </div>
+        </header>
+            
+        <main>
+			<article class="info_box">
+                <h2>Music Archive</h2>
+                <p class="TEST">Click each one to explore our music by year (or smth)</p>
+            </article>
+            
+			<section class="music">
+                    <button class="music accordion TEST">Album 1 - Master of Ottawa</button>
+                    <section class="accordion-panel">
+                        <div class="accordion-content">
+                            <img class="merch_img" src="https://smartcdn.gprod.postmedia.digital/ottawacitizen/wp-content/uploads/2016/02/an-oc-transpo-bus-is-stranded-in-a-turn-lane-at-hunt-club-rd.jpeg">
+                            <div>
+                            <div class="song">
+                                <p>Master of Ottawa</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Disciples of Ottawa</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Ottawa Panic</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>I will get stabbed in the Rideau Centre on May 6th</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>O-Train CrackHead</p>
+                                <p>2:34</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <button class="music accordion TEST">Album 2 - KYS (Keep Yourself Safe♡)</button>
+                    <section class="accordion-panel">
+                        <div class="accordion-content">
+                            <img class="merch_img" src="images/banana.jpg">
+                            <div>
+                            <div class="song">
+                                <p>how long is your toe?</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>can I have the brain cell back?</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Why Shrimps, Why?</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>This Love is Ska but It’s Tiny</p>
+                                <p>2:34</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <button class="music accordion TEST">Album 3 - Hungry</button>
+                    <section class="accordion-panel">
+                        <div class="accordion-content">
+                            <img class="merch_img" src="https://media.tenor.com/d0hx-tvAYecAAAAe/horse-staring-horse.png">
+                            <div>
+                            <div class="song">
+                                <p>The Machine Carries On feat. McDonald’s Beep</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Egg in the Microwave!!</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Apple & Oat</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Famished dans the Casino du Lac-Leamy</p>
+                                <p>2:34</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <button class="music accordion TEST">Singles</button>
+                    <section class="accordion-panel">
+                        <div class="accordion-content">
+                            <img class="merch_img"src="https://preview.redd.it/name-this-album-v0-jjm1czlyjvpg1.jpeg?auto=webp&s=2be58b3a0c0c5818e6283ccff76575774de5d280">
+                            <div>
+                            <div class="song">
+                                <p>Tabarnak feat. Petit Garcon</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>im a guy, but i make girls become lesbian</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>Big Boy, small fish (Modern Baseball)</p>
+                                <p>2:34</p>
+                            </div>
+                            <div class="song">
+                                <p>The Ballad of Markus Carnival</p>
+                                <p>2:34</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </section>
+        </main>
+
+
+    	<footer>
+            <div class="footer_box">
+                <p class="TEST" style="color: #BED4DC;">Copyright 2026</p>  <!-- Make an lighter colored font css variation -->
+            </div>
+        </footer>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="navbar.js"></script>
+
+        <script>
+            const app = Vue.createApp({});
+            app.component('navbar-component', window.Navbar);
+            app.mount('#app');
+        </script>
+	<script src="music.js"></script>
+    </body> 
+</html>
