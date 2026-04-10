@@ -1,4 +1,4 @@
-Team Members: Bianca Baril(), Amanda Bierman (101385428 // 041198001), Max Kipfer()
+Team Members: Bianca Baril(101391011 // 041109800), Amanda Bierman (101385428 // 041198001), Max Kipfer()
 
 Description: A local band, Ottawa State of Mind, who plays shows around Ottawa, sells merch, and creates original songs. 
 They are looking to reach new audiences, advertise upcoming shows, connect more easily with existing fans, and sell tickets/merchandise. 
