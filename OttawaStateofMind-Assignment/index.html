@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ottawa State of Mind</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Frijole&family=Gaegu&family=Gamja+Flower&family=Germania+One&family=Luckiest+Guy&family=Pangolin&family=Patrick+Hand&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header_box">
+                <h1 class="band-title">Ottawa State of Mind</h1>
+                <div id="app">
+                    <navbar-component></navbar-component>
+                </div>
+            </div>
+            <img class="banner"src="images/Banner2.png" alt="A banner image of the band (looking super cool btw).">
+        </header>
+        <main>
+            <div class="divider_box">
+                <h2>Upcoming Events!</h2>
+            </div>
+            <div class="event_info">
+                    <img src="images/Tank1.png" class="merch_img" alt="Group of people on a tank, one flexing.">
+                    <div>
+                        <h3>House of Targ</h3>
+                        <h3>April 8</h3>
+                        <button class="button_box">Buy Tickets</button>
+                        <button class="button_box"><a href="events.html">View More</a></button>
+                    </div>  
+            </div>
+
+            <div class="divider_box">
+                <h2>New Releases!</h2>
+            </div>
+            <div class="merch_grid">
+                <article class="merch_box">
+                    <div class="merch_info"><a href="Music.html"></a>
+                        <img src="https://media.tenor.com/d0hx-tvAYecAAAAe/horse-staring-horse.png" class="merch_img" alt="A horse facing forwards on a beach.">
+                        <p class="text_normal"><a href="music.html">Album 3 - Hungry</a></p>
+                    </div>
+                </article>
+                <article class="merch_box">
+                    <div class="merch_info">
+                        <img src="https://i.guim.co.uk/img/media/505b7642e5390383a0c075a92f4a64ef80423aae/0_92_4904_2944/master/4904.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=cc92a0e6583c3398ccdfb5269d14034a" class="merch_img" alt="Prime Minister Mark Carney posing in a chair.">
+                        <p class="text_normal"><a href="music.html">Single - Markus Carnival</a></p>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <div class="divider_box">
+                    <h2>Available Merch!</h2>
+                </div>
+                <div id="merch-container"></div>
+            </div>
+
+            <div class="divider_box">
+                    <h2>Meet the Band</h2>
+                </div>
+            <div class="event_info">
+                <div>
+                    <img src="images/bandtogether.jpg" class="merch_img" alt="The band standing outside with their hands in their pockets.">
+                    <p class="text_normal"><a href="about.html">We have so much to say.</a></p>
+                </div>
+            </div>
+
+            <!-- <article class="info_box">
+                <h2>Box Model</h2>
+                <p class="text_normal">Includes padding, border, and margin.</p>
+            </article>
+
+            <button type="button" class="button_box">Click Me</button>
+            <div class="img_group">
+                <div class="merch_info">
+                    <img class="merch_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX6Iuuym6Y6NnNoIDxgdJV6lSjAhS-4-ACxw&s" alt="Shrimp Image">
+                    <p>T-shirt <span class="price-box">$19.99</span></p>
+                </div>
+                <img class="merch_img" src="https://m.media-amazon.com/images/I/B1pppR4gVKL._CLa%7C2140%2C2000%7C91JzeDP-rVL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png" alt="Shrimp Image">
+                <img class="img_box" src="https://media.discordapp.net/attachments/1483500138864574515/1487820157324624044/Gb6IwmZXYAA9RU9.png?ex=69cd2aff&is=69cbd97f&hm=c42c47189a70923e90665dc8466fa833c1792afcd67d7309ac345cbe452d9e8d&=&format=webp&quality=lossless&width=961&height=640" alt="Shrimp Image">
+            </div> -->
+        </main>
+        <footer>
+            <div class="footer_box">
+                <p class="text_normal">Copyright 2026</p>  <!-- Make an lighter colored font css variation -->
+            </div>
+        </footer>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="navbar.js"></script>
+
+        <script>
+            const app = Vue.createApp({});
+            app.component('navbar-component', window.Navbar);
+            app.mount('#app');
+        </script>
+        <script src="merch homepage.js"></script>
+    </body>
+</html>

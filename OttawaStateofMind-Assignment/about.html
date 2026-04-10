@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ottawa State of Mind</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Frijole&family=Gaegu&family=Gamja+Flower&family=Germania+One&family=Luckiest+Guy&family=Pangolin&family=Patrick+Hand&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header_box">
+                <h1 class="band-title">Ottawa State of Mind</h1>
+                <div id="app">
+                    <navbar-component></navbar-component>
+                </div>
+            </div>
+            <img class="banner"src="images/Banner.png" alt="A banner image of the band (looking super cool btw).">
+        </header>
+        <main>
+            
+            <div>
+
+            <article class="divider_box">
+                <h2>Our Beginnings</h2>
+                <p class="text_info">It was a cold and windy night, the wolves and the loons were howling. Suddenly, a young man came to my door. He blew up and turned into a harmonica. Since then, we've been jamming out.</p>
+            </article>
+
+            <article class="info_box">
+                <img class="merch_img" src="images/petitgarcon.jpg" alt="The well known rapper, Petit Garcon, in latest photo shoot.">
+                <div>
+                    <h3 class="text_important">Petit Garcon</h3>
+                    <p class="text_normal">Joined the band to escape from pulling too many huzz in the Gatineau bars. Saxist by day, sexist by night.</p>
+                </div>
+            </article>
+
+            <article class="info_box">
+                <img class="merch_img" src="images/maxinebownita.jpg" alt="Super star Maxine Bownita in an odd place.">
+                <div>
+                    <h3 class="text_important">Maxine Bownita</h3>
+                    <p class="text_normal">The prettiest princess in all the land has learned bass guitar.</p>
+                </div>
+            </article>
+
+            <article class="info_box">
+                <img class="merch_img" src="images/daHorse.jpg" alt="Someone larping as a horse.">
+                <div>
+                    <h3 class="text_important">Horse</h3>
+                    <p class="text_normal">Mmmm apple and oat. Horse clop clop clop. neigh. (Percussionist)</p>
+                </div>
+            </article>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer_box">
+                <p class="text_normal">Copyright 2026</p>  <!-- Make an lighter colored font css variation -->
+            </div>
+        </footer>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="navbar.js"></script>
+
+        <script>
+            const app = Vue.createApp({});
+            app.component('navbar-component', window.Navbar);
+            app.mount('#app');
+        </script>
+    </body>
+</html>
