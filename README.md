@@ -1,4 +1,4 @@
-Team Members: Bianca Baril(101391011 // 041109800), Amanda Bierman (101385428 // 041198001), Max Kipfer()
+Team Members: Bianca Baril(101391011 // 041109800), Amanda Bierman (101385428 // 041198001), Max Kipfer(101368014 // 041200680)
 
 Description: A local band, Ottawa State of Mind, who plays shows around Ottawa, sells merch, and creates original songs. 
 They are looking to reach new audiences, advertise upcoming shows, connect more easily with existing fans, and sell tickets/merchandise. 
@@ -10,4 +10,4 @@ about page is another static page detailing more information about the band and 
 Work Distribution: Bianca created the main sections of the css style sheet and design and the entirety of the merch page. Amanda created the entire music page, finished the about page, and put together the home page. 
 Max made the events page, the navigation bar using vue.js, and began the about page. 
 
-No AI was used to program this assignment. 
+AI was used to assist the implementation of the navbar using vue.js.
