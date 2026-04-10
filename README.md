@@ -7,7 +7,7 @@ Navigation: After landing on the home page, users can interact with elements on 
 static page showing information for upcoming shows. View song information organized by album on the music page. Browse available products either by item type or all using the filter buttons on the merch page. Finally, the 
 about page is another static page detailing more information about the band and its members. 
 
-Work Distribution: Bianca created the main sections of the css style sheet and design and the entirety of the merch page. Amanda created the entire music page, finished the about page, and put together the home page. 
+Work Distribution (completed via Live Share extension): Bianca created the main sections of the css style sheet and design and the entirety of the merch page. Amanda created the entire music page, finished the about page, and put together the home page. 
 Max made the events page, the navigation bar using vue.js, and began the about page. 
 
 AI was used to assist the implementation of the navbar using vue.js.
